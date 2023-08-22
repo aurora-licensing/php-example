@@ -1,0 +1,152 @@
+/* General styles */
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-color: #1e1e1e; /* Dark background color */
+color: #ffffff; /* Light text color */
+}
+
+.container {
+width: 80%;
+max-width: 400px;
+}
+
+/* Card styles */
+.card {
+background-color: #292b2c; /* Darker card background color */
+color: #ffffff;
+animation: fadeIn 1s;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+
+.card-body {
+padding: 20px;
+position: relative;
+}
+
+.card-title {
+color: #ffffff;
+margin-bottom: 5px;
+text-align: center;
+}
+
+/* Form styles */
+.form-group {
+margin-bottom: 15px;
+position: relative;
+}
+
+.form-control {
+background-color: #464646; /* Darker form background color */
+color: #ffffff;
+border-color: #363636; /* Darker border color */
+padding-right: 30px;
+width: 100%;
+margin-top: 10px;
+font-size: 16px;
+}
+
+/* Modal styles */
+.modal-content {
+background-color: #292b2c; /* Darker modal background color */
+color: #ffffff;
+border-radius: 10px;
+}
+
+.modal-header {
+display: flex;
+justify-content: space-between; /* Align items to both ends */
+border-bottom: none; /* Remove default border */
+}
+
+.modal-title {
+color: #ffffff;
+margin: auto 0; /* Vertically center the title */
+}
+
+.modal-header .btn-close {
+color: #ffffff;
+}
+
+.modal-body {
+background-color: #333333; /* Darker modal body background color */
+padding: 20px;
+border-radius: 10px;
+margin-top: -15px; /* Adjust margin to overlap with header */
+}
+
+/* Button styles within modal */
+.modal-footer .btn-primary {
+background-color: #555555;
+border-color: #555555;
+color: #ffffff;
+}
+
+.modal-footer .btn-primary:hover {
+background-color: #444444;
+border-color: #444444;
+}
+
+/* Adjust modal size */
+.modal-dialog {
+max-width: 400px;
+}
+
+
+.form-control:focus {
+background-color: #565656; /* Lighter background color on focus */
+box-shadow: none;
+border-color: #555555; /* Darker border color on focus */
+}
+
+/* Button styles */
+.btn-primary {
+background-color: #555555; /* Darker button background color */
+border-color: #555555;
+color: #ffffff;
+width: 100%;
+margin-top: 15px;
+animation: buttonAnimation 0.5s;
+}
+
+.btn-primary:hover {
+background-color: #444444; /* Darker button background color on hover */
+border-color: #444444;
+}
+
+/* Logo styles */
+.logo {
+display: block;
+margin: 20px auto 10px;
+width: 100px;
+}
+
+/* Animation styles */
+@keyframes buttonAnimation {
+0% {
+transform: translateY(-10px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+transform: translateY(-10px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Autofill styles */
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0 30px #464646 inset !important; /* Darker autofill background color */
+-webkit-text-fill-color: #ffffff !important;
+}
